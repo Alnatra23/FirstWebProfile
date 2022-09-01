@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+            height: 100px;
+            align-items: center;
+            margin-top: 12px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<div class="hero">
+<nav>
+    <img src="images/Logo_Naufal-removebg-preview.png" class="logo">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="skill.html">SKILL</a></li>
+        <li><a href="Experience.html">EXPERIENCE</a></li>
+
+    </ul>
+
+</nav>
+<body class="contactt">
+<div class="container">
+    <form id="contact" action="" method="post">
+        <h3 class="Ha3">Contact Me</h3>
+
+        <fieldset>
+            <input placeholder="Nama" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Email" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Nomor Ponsel" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Ketik Pesan disini.." tabindex="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+</div>
+</div>
+</body>
+</html>

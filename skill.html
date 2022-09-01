@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        body{
+            background-color: #eff4fd;
+        }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+            height: 100px;
+            align-items: center;
+            margin-bottom: 12px;
+            margin-left: -10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: red;
+        }
+
+        body{
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .container{
+            width: 50%;
+            margin: 0 auto;
+        }
+        @keyframes load{
+            from {
+                width: 0%
+            }
+        }
+        @-webkit-keyframes load{
+            from {
+                width: 0%
+            }
+        }
+        @-moz-keyframes load{
+            from {
+                width: 0%
+            }
+        }
+        @-o-keyframes load{
+            from {
+                width: 0%
+            }
+        }
+
+        .bar{
+            background-color: #EEE;
+            padding: 2px;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #FFF;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
+        .bar::before{
+            content:  attr(data-skill);
+            background-color: #000000;
+            display: inline-block;
+            padding: 5px 0 5px 10px;
+            border-radius: inherit;
+            animation: load 2s 0s;
+            -webkit-animation: load 2s 0s;
+            -moz-animation: load 2s 0s;
+            -o-animation: load 2s 0s;
+        }
+
+        .bar.front::before{
+            background-color: #a6cfe3;
+        }
+        .bar.back::before{
+            background-color: #888888;
+        }
+
+        .bar.learning::before{
+            width: calc(40% - 10px);
+        }
+        .bar.basic::before{
+            width: calc(30% - 10px);
+        }
+        .bar.intermediate::before{
+            width: calc(7% - 10px);
+        }
+        .bar.advanced::before{
+            width: calc(35% - 10px);
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <img src="images/Logo_Naufal-removebg-preview.png" class="logo">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="skill.html">SKILL</a></li>
+        <li><a href="Experience.html">EXPERIENCE</a></li>
+
+    </ul>
+</nav>
+<div class="container-bg">
+    <h1>Skill Persentation</h1>
+    <div class="bar learning" data-skill="HTML"></div>
+    <div class="bar back basic" data-skill="CSS"></div>
+    <div class="bar back intermediate" data-skill="Javascript"></div>
+    <div class="bar front advanced" data-skill="PHP"></div>
+
+</div>
+<div class="social">
+    <a href="https://www.facebook.com/alif.naufal.5076"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/alif.naufall2311/?hl=id"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/6285233229797"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</body>
+</html>
